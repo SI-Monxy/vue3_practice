@@ -4,11 +4,11 @@ const app = Vue.createApp({
         // todos:[]
         message: 'Hello, Vue.js'
     }),
-    methods:{
-        clickHandler: function(event){
-            this.message = this.message.split('').reverse().join('')
-        }
-    }
+    // methods:{
+    //     clickHandler: function(event){
+    //         this.message = this.message.split('').reverse().join('')
+    //     }
+    // }
     // methods:{
     //     addItem: function(event){
     //         // console.log('Clicked!')
