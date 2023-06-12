@@ -2,7 +2,7 @@ const app = Vue.createApp({
     data: () => ({
         // newItem: '',
         // todos:[]
-        message: 'Hello, Vue.js'
+        message: 'Hello, <span style="color:red;">Vue.js</span>'
     }),
     // methods:{
     //     clickHandler: function(event){

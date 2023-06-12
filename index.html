@@ -9,7 +9,9 @@
 </head>
 <body>
     <div id="app">
-        <p v-pre>{{ message }}</p>
+        <p>{{ message }}</p>
+        <!-- v-htmlはxssの脆弱性の元になる原因にもなるので注意 ユーザーの入力がある箇所などには使わない-->
+        <p v-html="message"></p>
         <!-- <button v-on:click="clickHandler">
             Click!
         </button> -->
