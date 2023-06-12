@@ -9,11 +9,15 @@
 </head>
 <body>
     <div id="app">
-        <h2>Mustache</h2>
+        <p>{{message}}</p>
+        <p>{{number+1}}</p>
+        <p>{{message.split('').reverse().join('')}}</p>
+        <p>{{ok?'YES':'NO'}}</p>
+        <!-- <h2>Mustache</h2>
         <p>{{ message }}</p>
 
         <h2>v-text</h2>
-        <p v-text="message"></p>
+        <p v-text="message"></p> -->
         <!-- <p v-cloak>{{ message }}</p> -->
         <!-- <p>{{ message }}</p> -->
         <!-- v-htmlはxssの脆弱性の元になる原因にもなるので注意 ユーザーの入力がある箇所などには使わない-->
