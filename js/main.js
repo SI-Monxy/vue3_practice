@@ -1,8 +1,9 @@
 const app = Vue.createApp({
     data: () => ({
-        message:'Hello! Vue.js',
-        number:100,
-        ok:true
+        url:'https://www.google.co.jp/'
+        // message:'Hello! Vue.js',
+        // number:100,
+        // ok:true
         // newItem: '',
         // todos:[]
         // message: 'Hello, <span style="color:red;">Vue.js</span>'

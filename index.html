@@ -9,10 +9,14 @@
 </head>
 <body>
     <div id="app">
-        <p>{{message}}</p>
+        <!-- 完全な構文 -->
+        <a v-bind:href="url">Link1</a><br>
+        <!-- 省略記法 -->
+        <a :href="url">Link2</a>
+        <!-- <p>{{message}}</p>
         <p>{{number+1}}</p>
         <p>{{message.split('').reverse().join('')}}</p>
-        <p>{{ok?'YES':'NO'}}</p>
+        <p>{{ok?'YES':'NO'}}</p> -->
         <!-- <h2>Mustache</h2>
         <p>{{ message }}</p>
 
