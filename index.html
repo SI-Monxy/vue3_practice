@@ -9,8 +9,20 @@
 </head>
 <body>
     <div id="app">
-        <p>base price: <input type="text" v-model="basePrice"></p>
-        <p>tax included price: <input type="text" v-model="taxIncludedPrice"></p>
+       <h2>computed</h2>
+       <!-- キャッシュされるので全て同じ値 -->
+       <ol>
+        <li>{{ computedNumber }}</li>
+        <li>{{ computedNumber }}</li>
+        <li>{{ computedNumber }}</li>
+       </ol> 
+       <h2>methods</h2>
+       <!-- キャッシュされないので全て違う値 -->
+       <ol>
+        <li>{{ methodNumber() }}</li>
+        <li>{{ methodNumber() }}</li>
+        <li>{{ methodNumber() }}</li>
+       </ol>   
     </div>
     <script src="https://unpkg.com/vue@3.1.5"></script>
     <script src="js/main.js"></script>
