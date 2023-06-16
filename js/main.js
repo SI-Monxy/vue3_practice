@@ -1,32 +1,25 @@
-// // 監視プロパティ
-// const app = Vue.createApp({
-//     data: () => ({
-//       firstName: "",
-//       lastName: "",
-//       fullName: ""
-//     }),
-//     watch:{
-//         firstName: function(value){
-//             this.fullName = value + " " + this.lastName
-//         },
-//         lastName: function(value){
-//             this.fullName = this.firstName + " " + value
-//         }
-//     }
-// })
-// app.mount('#app')
 
-// 算出プロパティ
 const app = Vue.createApp({
     data: () => ({
-      firstName: "",
-      lastName: "",
+        colors: [
+            {name:"Red"},
+            {name:"Green"},
+            {name:"Blue"}
+        ]
     }),
-    computed: {
-        fullName: function(){
-            return this.firstName + " " + this.lastName
+    watch:{
+        colors:{
+            handler: function(newValue, oldValue){
+                console.log("Update")
+            },
+            deep: true
+        }
+    },
+    methods: {
+        onClick: function(event){
+            this.colors[1].name = "White"
         }
     }
- 
 })
 app.mount('#app')
+
