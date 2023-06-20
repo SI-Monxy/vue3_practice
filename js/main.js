@@ -2,7 +2,7 @@
 const app = Vue.createApp({
     data: () => ({
         styleObject:{
-            color:'red',
+            color:'blue',
             fontSize:'80px'
         }
     })
