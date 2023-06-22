@@ -1,7 +1,7 @@
 
 const app = Vue.createApp({
     data: () => ({
-       toggle:false
+       color:'greeen'
     })
 })
 app.mount('#app')
