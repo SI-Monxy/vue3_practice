@@ -5,7 +5,7 @@ const app = Vue.createApp({
     }),
     methods:{
         clickHandler:function(){
-            this.counter += 2
+            this.counter += 3
         }
     }
 })
